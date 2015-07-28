@@ -36,8 +36,12 @@
 				<div class="container">
 					<div class="owl-carousel">
 						<div class="item">
-							<span> 
-								<img src="http://owlgraphic.com/owlcarousel/demos/assets/owl1.jpg">							
+							<span>
+								<img src="http://owlgraphic.com/owlcarousel/demos/assets/owl1.jpg" class="showMorePictures">							
+								<div class= "moreInfo">
+									<br>
+									<img src="img/spotted_eagle_owl.jpg">
+								</div>
 								<p class="title">Owl</p>	
 								<div class="moreInfo">
 									<div class="bio">
@@ -56,7 +60,7 @@
 							</span> 
 						</div>
 						<div class="item">
-							<span> 
+							<span>
 								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Meerkat_feb_09.jpg/300px-Meerkat_feb_09.jpg">							
 								<p class="title">Meerkat</p>		
 								<div class="moreInfo">
@@ -68,7 +72,7 @@
 									</div>
 								</div>
 								<div class="buttons">
-									<a href="#" class="btn btn-sm btn-primary"><i class="fa fa-facebook"></i></a>
+									<a href="#" class="btn btn-sm btn-primary"><i class="fa fa-google-plus"></i></a>
 									<a href="#" class="btn btn-lg btn-success"><i class="fa fa-check"></i></a>
 									<a href="#" class="btn btn-lg btn-warning showMore"><i id="downBtn" class="fa fa-arrow-down"></i></a>
 									<a href="#" class="btn btn-sm btn-primary twitter"><i class="fa fa-twitter"></i></a>
@@ -192,6 +196,15 @@
 		  } else {
 			information.slideUp("slow");
 			$(this).children().attr("class", "fa fa-arrow-down")
+		  }
+		});
+		
+		$('.showMorePictures').click(function() {
+		  var information = $(this).next(".moreInfo");
+		  if (information.is(":hidden")) {
+			information.slideDown("slow");
+		  } else {
+			information.slideUp("slow");
 		  }
 		});
 		
