@@ -3,6 +3,11 @@ html {
 
 body {
 	background-color: white;
+	background: url(./../img/bg_leaf.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	color: #777777;
 	font-family: Arial, sans-serif;
 	font-size: 14px;
@@ -23,6 +28,21 @@ li {
 	body {
 		font-size: 13px;
 	}
+	.body {
+		min-height: 300px !important;
+	}
+}
+@media (max-width: 600px) {
+	body {
+		font-size: 13px;
+	}
+	.body {
+		min-height: 300px !important;
+	}
+}
+
+.body {
+	min-height: 909px
 }
 
 header {
