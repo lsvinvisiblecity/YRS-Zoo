@@ -1,0 +1,149 @@
+html {
+}
+
+body {
+	background-color: white;
+	color: #777777;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	margin: 0;
+}
+
+body a {
+	outline: none !important;
+}
+
+li {
+	line-height: 24px;
+}
+
+/* Responsive */
+@media (max-width: 479px) {
+	body {
+		font-size: 13px;
+	}
+}
+
+header {
+	background: #fff;
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+	border-bottom: 3px solid #eae9e9;
+	width: 100%;
+	height: 50px;
+	padding: 8px 0;	
+	clear: both;
+}
+
+/* Header */
+header  .container{	
+	max-width: 1170px;
+	height: 40px;
+}
+
+header  .container ul {	
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 2px;	
+}
+
+header  .container ul li  {	
+	display: inline;
+	padding-right: 25px;
+	font-size: 20px;
+	line-height: 24px;
+} 
+header  .container ul li  a{	
+	color: #000;
+}
+header  .container ul li  a:hover{	
+    padding-bottom: 8px;	
+	border-bottom: 3px solid #0bb9f2;
+	color: #0bb9f2;
+}
+.logo {	
+	height: 40px;
+	border-bottom: 3px solid #0bb9f2;
+}
+
+/* Main Body */
+#main_body .container  {	
+	margin-top: 30px;
+	max-width: 1170px;
+}
+.owl-carousel .item{
+	margin: 8px;
+	display: block;
+	background: #fff;
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+    border-radius: 15px;
+	min-height: 400px;
+  
+}
+.owl-carousel .item span{	
+	display: inline-block;
+	width: 93%;
+	height: 100%;
+    padding: 4px;
+	margin: 12px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.owl-carousel .item span img{
+	width: 100%;
+    border-radius: 5px;
+}
+.title {
+	margin-top: 10px;
+	font-weight: 800;
+	text-align: center;
+}
+.moreInfo {	
+	display: none;
+}
+.bio {	
+	position: relative;
+    border-radius: 5px;
+	padding: 10px;
+    background-color: #eae9e9;
+}
+.youtube {
+	margin-top: 10px;
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+}
+.youtube iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.item .buttons {
+    text-align:center;
+	bottom: 0;
+	padding: 10px;
+	margin-top: 10px;
+	height: 100px;
+	position: relative;
+}
+.item .buttons a{
+    border-radius: 50%;
+}
+.btn-sm {
+	font-size: 20px;
+	width: 45px;
+	height: 45px;
+}
+.btn-lg {
+	font-size: 40px;
+	width: 75px;
+	height: 75px;
+}
