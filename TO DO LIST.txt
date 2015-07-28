@@ -1,5 +1,5 @@
-THink of a name for the website and application
-Create a Logo for the website/application (Use the image in zoo/img/logo.png as a guide for size)
+THink of a name for the website and application - DONEISH
+Create a Logo for the website/application (Use the image in zoo/img/logo.png as a guide for size) - DONEISH
 Create a text file of all the images you want to use from the SQL data
 Find you tube videos matching the animals from the ones selected.
 
