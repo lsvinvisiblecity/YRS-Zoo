@@ -1,14 +1,12 @@
 THink of a name for the website and application - DONEISH
 Create a Logo for the website/application (Use the image in zoo/img/logo.png as a guide for size) - DONEISH
-Create a text file of all the images you want to use from the SQL data
+Create a text file of all the images you want to use from the SQL data - DONE
 Find you tube videos matching the animals from the ones selected.
 
 Format a text file like this:
-(1, 'ANIMAL NAME', 'YOUTUBE VIDEO URL', '/instant_wild/iw_wp/wp-content/uploads/2011/09/PIC.jpg'),
-
+(1, 'ANIMAL NAME', 'YOUTUBE VIDEO URL', '/instant_wild/iw_wp/wp-content/uploads/2011/09/PIC.jpg'), - DONE
 
 Look at the code i wrote for the index.html, i will explain it all later!
-
 
 
 Made a few changes, i hope you like them.
