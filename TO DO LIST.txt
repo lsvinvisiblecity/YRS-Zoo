@@ -8,3 +8,11 @@ Format a text file like this:
 
 
 Look at the code i wrote for the index.html, i will explain it all later!
+
+
+
+Made a few changes, i hope you like them.
+
+- I added to the main image a zoom! When you mouse over it watch it move :) so the user knows it does something!
+- I fixed your orginal idea of having the "arrow" button rotate around (i did keep your orginal code in the html if you want to revert back)
+- I added a lightbox to the "more pictures" this means we could make them smaller, and have more in a row!
