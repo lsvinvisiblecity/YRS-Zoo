@@ -214,9 +214,9 @@ footer  .container p span{
 	height: 75px;
 }
 .rotate {
-    -moz-transition: all 2s linear;
-    -webkit-transition: all 2s linear;
-    transition: all 2s linear;
+    -moz-transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
 }
 .rotate.down {
     -moz-transform:rotate(180deg);
