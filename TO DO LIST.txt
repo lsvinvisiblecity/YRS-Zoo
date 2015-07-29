@@ -14,3 +14,16 @@ Made a few changes, i hope you like them.
 - I added to the main image a zoom! When you mouse over it watch it move :) so the user knows it does something!
 - I fixed your orginal idea of having the "arrow" button rotate around (i did keep your orginal code in the html if you want to revert back)
 - I added a lightbox to the "more pictures" this means we could make them smaller, and have more in a row!
+
+
+Server Details
+- https://217.160.168.157:8443
+- Username: sickie
+- Password: Xzjf3%82
+
+
+MySQL Database
+- Host - localhost
+- DB - sickie_yrs
+- Username - sicki_yrs
+- Password - yrsyrs1
