@@ -223,3 +223,15 @@ footer  .container p span{
     -webkit-transform:rotate(180deg);
     transform:rotate(180deg);
 }
+
+/* LOGIN */
+.register{
+	text-align: center;
+}
+
+form{
+	align-content: center;
+	display: table;
+}
+
+input { display: table-cell; }
