@@ -84,11 +84,20 @@ if (isset($_GET['f']) && $_GET['f'] == 'Login') {
 		$sql = "INSERT INTO `sickie_yrs`.`order_form` (`id`, `user_id`, `animal_id`, `name_picked`) VALUES (NULL, '$user_id', '$animal_id', '$name')";
 		if ($conn->query($sql) === TRUE) {
 			$arr = array('response'=>'success');
-			try {
-    			$clockwork = new Clockwork($api_key);
-    			$message = array('to' =>'447803551575','message'=>'Hey!! This is '.$_POST["name"].', thank you for supporting me and hope we become best friends <3');
-    			$result = $clockwork->send($message);
+			$sql = "SELECT * FROM `sickie_yrs`.`users` WHERE `id`=".$user_id;
+			$result = $conn->query($sql);
+			$row = $result->fetch_assoc();
+
+			$number = explode("07", $row['tel']);
+			if ($number[0] == "07") {
+				$sendto = '447'.$number[1];
+			} else {
+				$sendto = $row['tel'];
 			}
+			$message = 'Hey!! This is '.$name.'. Thank you for supporting me and hope we become best friends <3';
+    		$clockwork = new Clockwork($api_key);
+    		$message = array('to' =>$sendto,'message'=>$message);
+    		$result = $clockwork->send($message);
 		} else {
 			$arr = array('response'=>'failed');
 		}	
