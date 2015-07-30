@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+
+		<title>Sponzoo An Animal</title>	
+
+		<meta name="keywords" content="" />
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="plugins/bootstrap/bootstrap.css">
+		<link rel="stylesheet" href="plugins/fontawesome/css/font-awesome.css">
+		<link rel="stylesheet" href="plugins/owlcarousel/owl.carousel.min.css" media="screen">
+		<link rel="stylesheet" href="plugins/owlcarousel/owl.theme.default.min.css" media="screen">
+		<link rel="stylesheet" href="plugins/swipebox/css/swipebox.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+		<div class="body">
+			<header id="header">
+				<div class="container">
+					<ul>
+						<li><a href="index.html" title="Home"><img class="logo" src="img/logo.png"></a></li>
+						<li><a href="zookeeper_bio.html" title="Zookeeper Bio"><i class="fa fa-file-text"></i></a></li>
+						<li><a href="zookeeper_blog.html" title="Zookeeper Blog"><i class="fa fa-envelope"></i></a></li>
+						<li><a href="register_login.html" title="User Login / Register" class="loginButton"><i class="fa fa-lock"></i></a></li>
+						<li><a href="user_profile.html" title="User Profile" class="userButton"><i class="fa fa-user"></i></a></li>
+					</ul>
+				</div>
+			</header>
+			<content id="main_body">
+				<div class="container">
+					<div class="owl-carousel text" style="display:inline !important;">
+						
+					</div>
+				</div>
+			</content>
+		</div>		
+		<footer id="footer">
+			<div class="container">
+				<p>Spon<span>zoo</span> An <span>Animal</span> &copy; 2015. All rights reserved.</p>
+			</div>
+		</footer>
+		</div>
+	</body>
+	<script src="plugins/jquery/jquery.js"></script>
+	<script src="plugins/bootstrap/bootstrap.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+		$(function() {
+			$.ajax({
+			url: "php/main.php?f=getBio",  
+			dataType: "json", 
+			success: function(data) {  
+				$.each(data, function(i, obj) {
+					$('.text').append('<div class="col-md-12"><div class="item"><span><p class="title">'+obj.name+'</p><img class="zookeeper" src="'+obj.img+'" /><p>'+obj.bio+'</p></span></div></div>');
+				});
+
+			}
+			});
+		});
+	</script>
+</html>

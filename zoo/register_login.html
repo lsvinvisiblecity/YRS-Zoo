@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+
+		<title>Sponzoo An Animal</title>	
+ 
+		<meta name="keywords" content="" />
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="plugins/bootstrap/bootstrap.css">
+		<link rel="stylesheet" href="plugins/fontawesome/css/font-awesome.css">
+		<link rel="stylesheet" href="plugins/owlcarousel/owl.carousel.min.css" media="screen">
+		<link rel="stylesheet" href="plugins/owlcarousel/owl.theme.default.min.css" media="screen">
+		<link rel="stylesheet" href="plugins/swipebox/css/swipebox.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+		<div class="body">
+			<header id="header">
+				<div class="container">
+					<ul>
+						<li><a href="index.html" title="Home"><img class="logo" src="img/logo.png"></a></li>
+						<li><a href="zookeeper_bio.html" title="Zookeeper Bio"><i class="fa fa-file-text"></i></a></li>
+						<li><a href="zookeeper_blog.html" title="Zookeeper Blog"><i class="fa fa-envelope"></i></a></li>
+						<li><a href="register_login.html" title="User Login / Register" class="loginButton"><i class="fa fa-lock"></i></a></li>
+						<li><a href="user_profile.html" title="User Profile" class="userButton"><i class="fa fa-user"></i></a></li>
+					</ul>
+				</div>
+			</header>
+			<content id="main_body">
+				<div class="container">
+					<div class="owl-carousel" style="display:inline !important;">
+						<div class="col-md-6">
+						<div class="item">
+							<span><p class="title">Register</p>
+							<div class="messager"></div>
+								<form action="php/main.php" method="POST">
+									<input name="emailR" type="email" class="form-control" placeholder="E-Mail Address" required><br />
+									<input name="fnameR" type="text" class="form-control" placeholder="First name" required><br />
+									<input name="snameR" type="text" class="form-control" placeholder="Last name" required><br />
+									<input name="passR" type="password" class="form-control" placeholder="Password" required><br />
+									<input name="telR" type="text" class="form-control" placeholder="Telephone Number" required><br />
+									<span style="text-align: center;">
+										<a href="#" class="btn btn-success register">Register</a>
+									</span>
+								</form>
+							</span>
+						</div>
+						</div>
+						<div class="col-md-6">
+						<div class="item">
+							<span><p class="title">Login</p>
+							<div class="message"></div>
+								<form>
+									<input name="emailL" type="email" class="form-control" placeholder="E-Mail Address" required><br />
+									<input name="passL" type="password" class="form-control" placeholder="Password" required><br />
+									<span style="text-align: center;">
+									<a href="#" class="btn btn-success pay login">Login</a>
+									</span>
+								</form>
+							</span>
+						</div>
+						</div>
+					</div>
+				</div>
+			</content>
+		</div>		
+		<footer id="footer">
+			<div class="container">
+				<p>Spon<span>zoo</span> An <span>Animal</span> &copy; 2015. All rights reserved.</p>
+			</div>
+		</footer>
+	</body>
+	<script src="plugins/jquery/jquery.js"></script>
+	<script src="plugins/bootstrap/bootstrap.js"></script>
+	<script src="plugins/owlcarousel/owl.carousel.js"></script>
+	<script src="plugins/swipebox/js/jquery.swipebox.min.js"></script>
+	<script src="js/custom.js"></script>
+</html>

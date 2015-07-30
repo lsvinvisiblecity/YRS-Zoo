@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+
+		<title>Sponzoo An Animal</title>	
+
+		<meta name="keywords" content="" />
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="plugins/bootstrap/bootstrap.css">
+		<link rel="stylesheet" href="plugins/fontawesome/css/font-awesome.css">
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+		<div class="body">
+			<header id="header">
+				<div class="container">
+					<ul>
+						<li><a href="index.html" title="Home"><img class="logo" src="img/logo.png"></a></li>
+						<li><a href="zookeeper_bio.html" title="Zookeeper Bio"><i class="fa fa-file-text"></i></a></li>
+						<li><a href="zookeeper_blog.html" title="Zookeeper Blog"><i class="fa fa-envelope"></i></a></li>
+						<li><a href="register_login.html" title="User Login / Register" class="loginButton"><i class="fa fa-lock"></i></a></li>
+						<li><a href="user_profile.html" title="User Profile" class="userButton"><i class="fa fa-user"></i></a></li>
+					</ul>
+				</div>
+			</header>
+			<content id="main_body">
+				<div class="container">
+					<div class="owl-carousel" style="display:inline !important;">
+						<div class="col-md-12">
+						<div class="item">
+							<span><p class="title">Why pay?</p>							
+								<ul>
+									<li>Ability to read biographies of keepers that deal with your adopted animals!</li>
+									<li>Send and recieve texts with your chosen animal!</li>
+									<li>Support your animal directly, and pay for his or her food!</li>
+								</ul>		
+								<img src="img/paypal.png" style="white-space: nowrap;">
+								<h4>Pay 79p with PayPal:</h4>
+								<a href="#" class="btn btn-success pay">Pay Now!</a>
+								<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" name="frmpaypal" id="frmpaypal" >
+									<input type="hidden" name="cmd" value="_cart">
+									<input type="hidden" name="upload" value="1">
+									<input type="hidden" name="business" value="aaron.mypaypal-facilitator@gmail.com">	
+									<input type="hidden" name="item_name_1" value="Sponzoo Donation">
+									<input type="hidden" name="amount_1" value="0.79">
+									<input type="hidden" name="no_shipping" value="0">			
+									<input type="hidden" name="custom" value="1">
+									<input type="hidden" name="currency_code" value="GBP">
+									<input type="hidden" name="notify_url" value="http://yrs.sickie.eu/php/notify.php">
+									<input type="hidden" name="return" value="http://yrs.sickie.eu/order_complete.html">
+									<input type="hidden" name="cancel_return" value="http://yrs.sickie.eu/order_failed.html">									
+								</form>
+							</span>
+						</div>
+						</div>
+					</div>
+				</div>
+			</content>
+		<footer id="footer">
+			<div class="container">
+				<p>Spon<span>zoo</span> An <span>Animal</span> &copy; 2015. All rights reserved.</p>
+			</div>
+		</footer>
+		</div>
+	</body>
+	<script src="plugins/jquery/jquery.js"></script>
+	<script src="plugins/bootstrap/bootstrap.js"></script>
+	<script src="plugins/owlcarousel/owl.carousel.js"></script>
+	<script src="plugins/swipebox/js/jquery.swipebox.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+		$('.pay').click(function() {
+			if (localStorage.getItem("user_id")){
+			document.getElementById("frmpaypal").submit();
+			} else {
+			alert("You must be logged in to adopt an animal");
+			}
+		});
+	</script>
+</html>

